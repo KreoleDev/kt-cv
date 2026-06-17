@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/next'
 import { ScrollReset } from '@/components/scroll-reset'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
@@ -67,7 +66,6 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <ScrollReset />
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )

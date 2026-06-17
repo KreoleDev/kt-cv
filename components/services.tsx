@@ -62,7 +62,7 @@ function ServiceCard({ service }: { service: Service }) {
   return (
     <article
       id={`servico-${service.id}`}
-      className="group relative min-h-[34rem] overflow-hidden rounded-[2rem] bg-card shadow-2xl shadow-black/25 ring-1 ring-white/10 md:min-h-[40rem]"
+      className="group relative min-h-[29rem] overflow-hidden rounded-[1.5rem] bg-card shadow-2xl shadow-black/25 ring-1 ring-white/10 sm:min-h-[34rem] sm:rounded-[2rem] md:min-h-[40rem]"
     >
       <div className="absolute inset-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -73,18 +73,18 @@ function ServiceCard({ service }: { service: Service }) {
           className="h-full w-full object-cover object-center transition duration-700 group-hover:scale-[1.03]"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/58" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/5 to-black/64 sm:via-transparent sm:to-black/58" />
 
-      <div className="relative z-10 flex min-h-[34rem] flex-col justify-between p-6 text-white md:min-h-[40rem] md:p-8">
-        <p className="w-fit rounded-full bg-white/18 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-black/15 backdrop-blur-md">
+      <div className="relative z-10 flex min-h-[29rem] flex-col justify-between p-5 text-white sm:min-h-[34rem] sm:p-6 md:min-h-[40rem] md:p-8">
+        <p className="w-fit rounded-full bg-white/18 px-3 py-1.5 text-xs font-semibold text-white shadow-lg shadow-black/15 backdrop-blur-md sm:px-4 sm:py-2 sm:text-sm">
           {service.eyebrow}
         </p>
 
         <div className="max-w-xl">
-          <h2 className="text-balance text-3xl font-bold leading-tight tracking-normal text-white drop-shadow-2xl md:text-5xl">
+          <h2 className="text-balance text-2xl font-bold leading-tight tracking-normal text-white drop-shadow-2xl sm:text-3xl md:text-5xl">
             {service.title}
           </h2>
-          <p className="mt-4 text-pretty text-base leading-relaxed text-white/88 drop-shadow-xl md:text-lg">
+          <p className="mt-3 text-pretty text-sm leading-relaxed text-white/88 drop-shadow-xl sm:mt-4 sm:text-base md:text-lg">
             {service.desc}
           </p>
         </div>
@@ -98,10 +98,10 @@ export function Services() {
     <section
       id="servicos"
       aria-label="Serviços"
-      className="bg-background px-6 py-14 md:py-20"
+      className="bg-background px-4 py-12 sm:px-6 sm:py-14 md:py-20"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 lg:grid-cols-2">
           {services.map((service) => (
             <ServiceCard key={service.index} service={service} />
           ))}
