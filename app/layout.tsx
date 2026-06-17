@@ -16,20 +16,8 @@ export const metadata: Metadata = {
   description:
     'Um único parceiro para cada camada do seu produto — estratégia, design, engenharia e a nuvem onde ele roda.',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: [{ url: '/icon.svg?v=2', type: 'image/svg+xml' }],
+    shortcut: '/icon.svg?v=2',
     apple: '/apple-icon.png',
   },
   openGraph: {
