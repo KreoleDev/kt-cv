@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'KreoleTech',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://kreoletech.cv/kreoletech-og-v2.png',
         width: 1200,
         height: 630,
         alt: 'KreoleTech',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: 'KreoleTech — Desenvolvimento de software de ponta a ponta',
     description:
       'Um único parceiro para cada camada do seu produto — estratégia, design, engenharia e a nuvem onde ele roda.',
-    images: ['/og-image.png'],
+    images: ['https://kreoletech.cv/kreoletech-og-v2.png'],
   },
 }
 
