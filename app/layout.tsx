@@ -11,10 +11,10 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kreoletech.cv'),
   title: 'KreoleTech — Desenvolvimento de software de ponta a ponta',
   description:
     'Um único parceiro para cada camada do seu produto — estratégia, design, engenharia e a nuvem onde ele roda.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -31,6 +31,30 @@ export const metadata: Metadata = {
       },
     ],
     apple: '/apple-icon.png',
+  },
+  openGraph: {
+    title: 'KreoleTech — Desenvolvimento de software de ponta a ponta',
+    description:
+      'Um único parceiro para cada camada do seu produto — estratégia, design, engenharia e a nuvem onde ele roda.',
+    url: 'https://kreoletech.cv',
+    siteName: 'KreoleTech',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'KreoleTech',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KreoleTech — Desenvolvimento de software de ponta a ponta',
+    description:
+      'Um único parceiro para cada camada do seu produto — estratégia, design, engenharia e a nuvem onde ele roda.',
+    images: ['/og-image.png'],
   },
 }
 
